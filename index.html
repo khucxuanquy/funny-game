@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.png' />
+    <title>cueB</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body class="bodyCursorDefault">
+    <div class="container">
+        <!-- PLAY GAME -->
+        <main onclick="defaultSound()" class="bodyCursorDefault">
+            <button onclick="startGame()" class="btn btn-outline-info">
+                <h3 id="btnStartGame"> Start </h3>
+                <span id="TimeCountDown"></span>
+            </button>
+            <div class="main__list__image" style="display: none"><br /></div>
+            <div class="main__option__right">
+                <h2>Point : <span id="CheckPoint">0</span></h2>
+                <span>50</span> <img id="ImgOption3" onclick="ChooseOption('ImgOption3')" onmouseover="HoverPlaySound()" src="./img/gun.png"><br>
+                <span>30</span> <img id="ImgOption2" onclick="ChooseOption('ImgOption2')" onmouseover="HoverPlaySound()" src="./img/kiem.png"><br>
+                <span>20</span> <img id="ImgOption1" onclick="ChooseOption('ImgOption1')" onmouseover="HoverPlaySound()" src="./img/bua.png">
+            </div>
+            <br>
+            <div class="main__instructions">
+                <img src="./img/instructions.png" width="100%" height="100%">
+            </div>
+        </main>
+
+        <div id="form" style="display: none">
+            <div style="display:inline;">
+                <h3>Point</h3>
+                <h1 style="margin: -10px;"></h1>
+                <button class="btn btn-outline-info" onclick="resetForm()">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- end container -->
+
+    <div id="footer" class="container">
+    </div>
+    <div style="display: none;">
+        <img src="./img/bua1.png" alt="image">
+        <img src="./img/bua2.png" alt="image">
+        <img src="./img/kiem1.png" alt="image">
+        <img src="./img/kiem2.png" alt="image">
+        <img src="./img/gun1.png" alt="image">
+        <img src="./img/gun2.png" alt="image">
+    </div>
+    <script type="text/javascript" src="./sound.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
