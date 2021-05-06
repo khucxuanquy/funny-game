@@ -59,3 +59,8 @@ function ringSound() {
   miss.volume = 1;
   ring.currentTime = 0;
 }
+window.onload = function () {
+  muSic.play();
+  muSic.volume = 0.2;
+  muSic.loop = true;
+}

@@ -189,7 +189,4 @@ function resetForm() {
 window.onload = function () {
     $(".main__list__image").addEventListener('click', () => checkOptionRight())
     $(".main__option__right").addEventListener('click', () => checkOptionRight())
-    muSic.play();
-    muSic.volume = 0.2;
-    muSic.loop = true;
 }
